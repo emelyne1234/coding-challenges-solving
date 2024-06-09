@@ -44,3 +44,18 @@ To run the project, follow these steps:
 2. **Open your web browser and go to `http://localhost:PORT` to view the project.**
 
 ### Done
+
+**CODING CHALLENGES**
+**Challenge 1:**
+// array map
+- declared the function to perform the task
+- used for loop to define the first number of the array to be returned
+- used a nested for loop to define the last number of the array to be returned
+- A condition inside the nested loop was used to return true if the sum of the first and last numbers in the above-defined array is equal to the target provided as an argument.
+  
+**Challenge 2:** 
+// String formation
+- declared a function to perform the task
+- declared two empty variables to keep the results after the tasks. One is for the result after reversing, and the other is for the ascii result.
+- used the conditions; when the first condition is met, the first variable should keep the result where, whereas the second variable should keep the second result when the second condition is met. When the third condition is met, both variables should keep both results.
+- the function should return the result.
