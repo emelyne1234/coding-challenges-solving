@@ -46,6 +46,7 @@ To run the project, follow these steps:
 ### Done
 
 **CODING CHALLENGES**
+
 **Challenge 1:**
 // array map
 - declared the function to perform the task
