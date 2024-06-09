@@ -1,48 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body class="m-0 p-0 bg-white">
-    <div class="flex lg:p-3">
-        <div class="relative">
-            <img src="images/fox.jpeg" alt="" class="h-screen w-screen">
-            <div class="hidden lg:inline">
-                <p class="font-bold text-3xl absolute text-white bottom-24 left-10">FENNEC</p>
-                <p class="font-bold text-3xl absolute text-white bottom-16 left-10">FOX</p>
-                <p class="absolute text-gray-400  bottom-3 left-10">India</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+    </style>
+    <title>COA Task Force challenge</title>
+  </head>
+  <body class="m-0 p-0 bg-black h-screen overflow-hidden">
+    <div class="flex h-full gap-[3px]">
+      <div class="relative flex-1 overflow-hidden hover-parent">
+        <img
+          src="images/fox.jpeg"
+          alt="Fennec Fox"
+          class="object-cover w-full h-full transition duration-300 ease-in-out hover:blur-sm hover:grayscale cursor-pointer"
+          onclick="openModal(this)"
+        />
+        <div class="hidden lg:block">
+          <p
+            class="font-bold text-3xl absolute text-white bottom-24 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            FENNEC <br />
+            FOX
+          </p>
+          <p
+            class="absolute text-gray-400 bottom-10 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            India
+          </p>
+          <p
+            class="absolute text-blue-500 bottom-3 left-10 forward-arrow know-more opacity-0 transition duration-300 ease-in-out"
+          >
+            Know more
+          </p>
         </div>
-        <div class="relative">
-            <img src="images/whale.jpeg" class="h-screen w-screen relative" alt="">
-            <div class="hidden lg:inline">
-                <p class="font-bold text-3xl absolute text-white bottom-24 left-10">HUMPBACK</p>
-                <p class="font-bold text-3xl absolute text-white bottom-16 left-10">WHALE</p>
-                <p class="absolute text-gray-400  bottom-3 left-10">Sout Africa</p>
-            </div>
-            
+      </div>
+      <div class="relative flex-1 overflow-hidden hover-parent">
+        <img
+          src="images/whale.jpeg"
+          alt="Humpback Whale"
+          class="object-cover w-full h-full transition duration-300 ease-in-out hover:blur-sm hover:grayscale cursor-pointer"
+          onclick="openModal(this)"
+        />
+        <div class="hidden lg:block">
+          <p
+            class="font-bold text-3xl absolute text-white bottom-24 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            HUMPBACK <br />
+            WHALE
+          </p>
+          <p
+            class="absolute text-gray-400 bottom-10 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            South Africa
+          </p>
+          <p
+            class="absolute text-blue-500 bottom-3 left-10 forward-arrow know-more opacity-0 transition duration-300 ease-in-out"
+          >
+            Know more
+          </p>
         </div>
-        <div class="relative">
-            <img src="images/baboon.jpeg" class="h-screen w-screen relative" alt="">
-            <div class="hidden lg:inline">
-                <p class="font-bold text-3xl absolute text-white bottom-24 left-10">COMMON BROWN</p>
-                <p class="font-bold text-3xl absolute text-white bottom-16 left-10">BABOON</p>
-                <p class="absolute text-gray-400 bottom-3 left-10">South Africa</p>
-            </div>
-            
+      </div>
+      <div class="relative flex-1 overflow-hidden hover-parent">
+        <img
+          src="images/baboon.jpeg"
+          alt="Common Brown Baboon"
+          class="object-cover w-full h-full transition duration-300 ease-in-out hover:blur-sm hover:grayscale cursor-pointer"
+          onclick="openModal(this)"
+        />
+        <div class="hidden lg:block">
+          <p
+            class="font-bold text-3xl absolute text-white bottom-24 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            COMMON BROWN <br />
+            BABOON
+          </p>
+          <p
+            class="absolute text-gray-400 bottom-10 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            South Africa
+          </p>
+          <p
+            class="absolute text-blue-500 bottom-3 left-10 forward-arrow know-more opacity-0 transition duration-300 ease-in-out"
+          >
+            Know more
+          </p>
         </div>
-        <div class="relative">
-            <img src="images/deer.jpeg" class="h-screen w-screen" alt="">
-            <div class="hidden lg:inline">
-                <p class="font-bold text-3xl absolute text-white bottom-24 left-10">SPOTTED</p>
-                <p class="font-bold text-3xl absolute text-white bottom-16 left-10">DEER</p>
-                <p class="absolute text-gray-400 bottom-3 left-10">Amazon</p>
-            </div>
-            
+      </div>
+      <div class="relative flex-1 overflow-hidden hover-parent">
+        <img
+          src="images/deer.jpeg"
+          alt="Spotted Deer"
+          class="object-cover w-full h-full transition duration-300 ease-in-out hover:blur-sm hover:grayscale cursor-pointer"
+          onclick="openModal(this)"
+        />
+        <div class="hidden lg:block">
+          <p
+            class="font-bold text-3xl absolute text-white bottom-24 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            SPOTTED <br />
+            DEER
+          </p>
+          <p
+            class="absolute text-gray-400 bottom-10 left-10 hover-child transition duration-300 ease-in-out"
+          >
+            Amazon
+          </p>
+          <p
+            class="absolute text-blue-500 bottom-3 left-10 forward-arrow know-more opacity-0 transition duration-300 ease-in-out"
+          >
+            Know more
+          </p>
         </div>
+      </div>
     </div>
-</body>
+
+    <!-- Modal -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden"
+      onclick="closeModal(event)"
+    >
+      <div class="relative" onclick="event.stopPropagation()">
+        <button
+          class="close-btn text-white text-3xl p-4"
+          onclick="closeModal()"
+        >
+          &times;
+        </button>
+        <img
+          id="modalImage"
+          src=""
+          alt="Modal Image"
+          class="max-w-full object-cover max-h-full"
+        />
+      </div>
+    </div>
+
+    <script src="gallery.js"></script>
+  </body>
 </html>
